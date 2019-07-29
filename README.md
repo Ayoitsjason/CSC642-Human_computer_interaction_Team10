@@ -1,6 +1,6 @@
 # CSC642-Human_computer_interaction_Team10
 
-Name
+##Name
 FOODIE
 "You are what you eat"
 
