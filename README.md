@@ -4,11 +4,12 @@ Name:
 FOODIE
 "You are what you eat"
 
-Description
+Description: 
 Mobile app that lets you search for food based on your specific diet.
 
-Installation
+Installation:
 1. Foodie folder has all files for front end view
+2. Milestones includes process on development
 
 Authors and acknowledgment
 SFSU team 10
@@ -17,8 +18,5 @@ SFSU team 10
 * Zi ping
 * Harsham
 
-License
-For open source projects, say how it is licensed.
-
-Project status
+Project status:
 Currently working.
