@@ -12,10 +12,32 @@
   </head>
   <body style="background-color:tomato">
 
-    <div class="Container text-center" style="color:white">
+    <div class="text-right">
+        <button type="button" class="btn btn-outline-light">Sign Up</button>
+        <button type="button" class="btn btn-outline-light">Login</button>
+    </div>
+
+    <div class="Container text-center" style="color:white;">
         <h1>Foodie</h1>
         <small>You are what you eat</small>
     </div>
+
+    <div class="input-group mb-3 mt-4">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split bg-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Mediterranean</a>
+                <a class="dropdown-item" href="#">Dash</a>
+                <a class="dropdown-item" href="#">Flexitarian</a>
+            </div>
+        <input type="text" class="form-control" placeholder="Search a diet or food here..." aria-label="Search a diet or food here..." aria-describedby="button-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary bg-light" type="button" id="button-addon2">Search</button>
+        </div>
+    </div>
+
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -23,4 +45,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+
+  <footer>
+      <div class="text-center" style="background-color: gray">
+        <nav class="navbar fixed-bottom navbar-light bg-gray">
+            <a class="navbar-brand" href="#">Search + near + profile + favorites</a>
+        </nav>
+    </div>
+  </footer>
+
 </html>
