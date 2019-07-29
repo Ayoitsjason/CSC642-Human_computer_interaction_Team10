@@ -11,7 +11,7 @@ Installation:
 1. Foodie folder has all files for front end view
 2. Milestones includes process on development
 
-Authors and acknowledgment
+Authors and acknowledgment:
 SFSU team 10
 * Jason
 * Audrey
