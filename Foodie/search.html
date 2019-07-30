@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Foodie</title>
+
+    <!-- Style for Google map -->
+    <style>
+    #map {
+        height: 336px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+
   </head>
   <body style="background-color:tomato">
 
@@ -20,44 +29,41 @@
         </div>
     </div>
 
-    <!--App title-->
-    <div class="Container text-center mt-5" style="color:white;">
-        <h1 class="display-1">Foodie</h1>
-        <h6><strong>You are what you eat</strong></h6>
+    <!--Google Map-->
+    <div id="outerdiv" class="mt-1" style="max-width: 336px; margin: auto; text-align: center;">
+        <div id="map" class="text-center"></div>
     </div>
 
-    <!--Middle search bar-->
-    <div class="input-group mb-3 mt-4" style="max-width: 100%; text-align: center;">
-        <div class="input-group" style="max-width: 336px; max-height: 47px; width: 100%; margin: auto; text-align: center;">
-        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split bg-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Toggle Dropdown</span>
-        </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Mediterranean</a>
-                <a class="dropdown-item" href="#">Dash</a>
-                <a class="dropdown-item" href="#">Flexitarian</a>
-            </div>
-        <input type="text" class="form-control" placeholder="Search a diet or food here..." aria-label="Search a diet or food here..." aria-describedby="button-addon2">
-        <div class="input-group-append">
-            <button class="btn btn-outline-secondary bg-light" type="button" id="button-addon2">Search</button>
-        </div>
-
-        </div>
-
-    </div>
-
-
-    <!--Hot and new restaurant display-->
-    <div class="Container text-center mt-5" style="color:white;">
-            <h6><strong>Hot & New</strong></h6>
+    <!--Filters-->
+    <div class="Container text-center mt-1" style="color:white;">
+        <h6><strong>Filters</strong></h6>
     </div>
     
+    <!-- Search results -->
+    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Script and Api for google maps-->
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 37.7749, lng: -122.4194},
+            zoom: 4
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzuRuJxXZFZYBtwQshhslql4haoR1PdbE&callback=initMap"
+        async defer>
+    </script>
+
   </body>
 
   <footer>
